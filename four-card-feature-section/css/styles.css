@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --vdark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --vlight-gray: hsl(0, 0%, 98%);
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background-color: var(--vlight-gray);
+
+  font-family: 'Poppins', sans-serif;
+  color: var(--grayish-blue);
+}
+
+.container {
+  max-width: 1400px;
+}
+
+/* header */
+.container h1 {
+  max-width: 30rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.container h1 span {
+  color: var(--vdark-blue);
+}
+
+.container > p {
+  text-align: center;
+  max-width: 35rem;
+  margin: 1rem auto 3rem;
+}
+
+/* cards */
+.container .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.grid-container .card-4,
+.grid-container .card-1 {
+  grid-row: span 2;
+  align-self: center;
+}
+
+.grid-container .card-3 {
+  order: 1;
+}
+
+.grid-container .card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.grid-container .card h2 {
+  color: var(--vdark-blue);
+  margin-bottom: 1rem;
+}
+
+.grid-container .card p {
+  margin-bottom: 2rem;
+}
+
+.grid-container .card img {
+  display: block;
+  margin-left: auto;
+}
+
+/* card top border */
+.card-1 {
+  border-top: 5px solid var(--cyan);
+}
+.card-2 {
+  border-top: 5px solid var(--red);
+}
+.card-3 {
+  border-top: 5px solid var(--orange);
+}
+.card-4 {
+  border-top: 5px solid var(--blue);
+}
+
+/* media queries */
+@media (max-width: 1000px) {
+  .container .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-container .card-4,
+  .grid-container .card-1 {
+    grid-row: auto;
+  }
+  .grid-container .card {
+    height: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .grid-container .card-4 {
+    order: 1;
+  }
+}
