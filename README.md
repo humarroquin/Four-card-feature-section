@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [view live site](https://4cdfsnov23.netlify.app/)
+- Live Site URL: [4cdfsnov23.netlify.app](https://4cdfsnov23.netlify.app/)
 
 ## My process
 
