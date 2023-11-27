@@ -36,10 +36,8 @@ Users should be able to:
 
 ### What I learned
 
-I continued practicing with CSS Grid, applying the span and order properties.
+Continued practicing with CSS Grid, using the 'span' and 'order' properties.
 
 ### Continued development
 
-It took some research and testing to move the images to the right place. I'll continue doing research on the following: inline, inline-block, and block elements.
-
-Also, I think the code for the top borders is repeated, not following the DRY principle. I will do further research on how to reduce this.
+It took some research and testing to properly position the images. I need to learn more about inline, inline-block, and block elements, as well as the positioning of images.
